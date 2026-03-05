@@ -1,0 +1,170 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+  min-height: 100vh;
+  color: #1e293b;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(10px);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navbar a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #cbd5e1;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar a:hover {
+  color: #38bdf8;
+}
+
+.navbar a.active {
+  color: #38bdf8;
+}
+
+.navbar a.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #38bdf8;
+  bottom: -5px;
+  left: 0;
+}
+
+/* ================= CONTAINER ================= */
+
+.container {
+  padding: 3rem 4rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.container p {
+  color: #475569;
+  margin-bottom: 2rem;
+}
+
+/* ================= GRID ================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* ================= CARD ================= */
+
+.card {
+  background: white;
+  padding: 1.8rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+/* ================= BUTTON ================= */
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  transform: scale(1.05);
+}
+
+/* ================= PRODUCT DETAILS ================= */
+
+.card h2 {
+  margin-bottom: 15px;
+}
+
+.card strong {
+  color: #0f172a;
+}
+
+/* ================= 404 ================= */
+
+.container h1 {
+  margin-bottom: 15px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .container {
+    padding: 2rem 1.5rem;
+  }
+
+  .navbar a {
+    margin-left: 15px;
+  }
+
+}
