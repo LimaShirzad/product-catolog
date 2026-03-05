@@ -1,8 +1,13 @@
 function Home() {
   return (
-    <div className="container">
-      <h1>Welcome to Our Store</h1>
-      <p>Explore our high quality products.</p>
+    <div className="hero">
+      <div className="hero-content">
+        <h1>Discover Premium Products</h1>
+        <p>Modern, high-quality tech products carefully selected for you.</p>
+        <a href="/products" className="hero-btn">
+          Explore Products
+        </a>
+      </div>
     </div>
   );
 }
